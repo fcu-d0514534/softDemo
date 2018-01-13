@@ -15,6 +15,7 @@ before_install:
 
 script:
 - chmod +x ./gradlew
+  - ./gradlew connectedCheck
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
