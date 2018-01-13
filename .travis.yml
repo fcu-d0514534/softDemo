@@ -15,7 +15,6 @@ before_install:
 
 script:
 - chmod +x ./gradlew
-- ./gradlew build jacocoTestReport assembleAndroidTest
 - ./gradlew connectedCheck
 
 after_success:
