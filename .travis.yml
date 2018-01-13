@@ -11,7 +11,7 @@ components:
 before_install:
 - chmod +x gradlew
 
-before_script:
+script:
 - chmod +x ./gradlew
 
 after_success:
