@@ -20,14 +20,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    productFlavors {
-        free {
-            applicationId 'com.shang.softdemo.free'
-        }
-        paid {
-            applicationId 'com.shang.softdemo'
-        }
-    }
     jacocoAndroidUnitTestReport {
         csv.enabled false
         html.enabled false
