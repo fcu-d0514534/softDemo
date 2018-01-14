@@ -13,11 +13,11 @@ components:
 before_install:
 - chmod +x gradlew
 
-before_script:
+script:
 - chmod +x ./gradlew
+- ./gradlew build jacocoTestReport
 
-#script:
-#./gradlew jacocoTestReport
+
 
 
 after_success:
