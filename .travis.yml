@@ -12,7 +12,7 @@ before_install:
 - chmod +x gradlew
 
 script:
-- ./gradlew build jacocoTestReport assembleAndroidTest
+- ./gradlew jacocoTestReport
 - chmod +x ./gradlew
 
 

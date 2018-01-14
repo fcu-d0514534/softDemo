@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-//123
+
     ListView listView;
     public static String[] url={"http://myweb.fcu.edu.tw/~d0591821/map/"};
     public static String[] problem={"抽籤問題","搜尋問題","健康管理參照問題","卡路里計算問題","聯絡我們問題"};
