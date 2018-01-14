@@ -1,8 +1,5 @@
 language: android
 jdk: oraclejdk8
-env:
-  global:
-    group: deprecated-2017Q4
 android:
 components:
 - tools
@@ -16,7 +13,7 @@ components:
 before_install:
 - chmod +x gradlew
 
-before_script:
+script:
 - chmod +x ./gradlew
 
 #script:
