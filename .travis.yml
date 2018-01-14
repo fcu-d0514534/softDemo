@@ -18,8 +18,10 @@ licenses:
     - google-gdk-license-.+
 
 before_install:
-  - chmod +x ./gradlew
+- chmod +x gradlew
 
+script:
+  - chmod +x ./gradlew
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
