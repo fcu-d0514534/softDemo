@@ -1,5 +1,9 @@
 language: android
 jdk: oraclejdk8
+env:
+  global:
+    - ANDROID_TARGET=android-25
+    - ANDROID_ABI=armeabi-v7a
 android:
 components:
 
@@ -11,8 +15,12 @@ components:
 before_install:
 - chmod +x gradlew
 
-script:
+before_script:
 - chmod +x ./gradlew
+
+#script:
+#./gradlew jacocoTestReport
+
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
