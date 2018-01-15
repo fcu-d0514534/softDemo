@@ -12,6 +12,7 @@ public class MainActivityTest {
     @Test
     public void getURL() throws Exception {
         assertEquals(MainActivity.getURL(0),"http://myweb.fcu.edu.tw/~d0591821/map/");
+        assertEquals(MainActivity.getURL(1),"http://myweb.fcu.edu.tw/~d0512808/map/");
     }
 
     @Test

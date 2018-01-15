@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 public class MyAdapter extends BaseAdapter {
     String[] data={"抽籤","搜尋","健康管理參照","卡路里計算","聯絡我們","常見問題"};
-    int[] picture={R.drawable.lottery,R.drawable.lottery,R.drawable.lottery,R.drawable.calories,R.drawable.gmail,R.drawable.question};
+    int[] picture={R.drawable.lottery,R.drawable.search,R.drawable.hospital,R.drawable.calories,R.drawable.gmail,R.drawable.question};
 
 
     Context context;
