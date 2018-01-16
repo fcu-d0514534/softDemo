@@ -13,9 +13,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     ListView listView;
-    static String[] url={"http://myweb.fcu.edu.tw/~d0591821/map/","http://myweb.fcu.edu.tw/~d0512808/map/","http://myweb.fcu.edu.tw/~d0514195/health/health.html"};
+    static String[] url={"http://myweb.fcu.edu.tw/~d0591821/map/","http://myweb.fcu.edu.tw/~d0512808/map/"
+            ,"http://myweb.fcu.edu.tw/~d0514195/health/health.html","http://www.scu.edu.tw/health/Work/form1.php"};
     static String[] problem={"抽籤問題","搜尋問題","健康管理參照問題","卡路里計算問題","聯絡我們問題"};
-    static String[] content={"選擇類別,位置,距離按下確定","","","","使用Message來回報問題"};
+    static String[] content={"選擇類別,位置,距離按下確定","輸入關鍵字然後跳到google map","自己看圖","使用清單選擇計算卡路里","使用Message來回報問題"};
 
 
     @Override
@@ -39,13 +40,10 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(Intent.createChooser(intent, "Send mail..."));
                 }else if(position==5){
                     showProblem();
-
-
                 }else{
                     Intent intent=new Intent(MainActivity.this,WebActivity.class);
                     intent.putExtra("URL",getURL(position));
                     startActivity(intent);
-
                 }
             }
         });
@@ -67,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         new AlertDialog.Builder(MainActivity.this)
+                                .setTitle("內容")
                                 .setMessage(getContent(which))
                                 .show();
                     }
